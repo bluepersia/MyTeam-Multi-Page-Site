@@ -37,6 +37,11 @@ body
     line-height: 1;
 }
 
+body * 
+{
+    font-family: var(--font);
+}
+
 h1, h2, h3, body
 {
     font-weight: bold;
@@ -56,12 +61,12 @@ h1 span
 
 
 h2 {
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
 
 h3 
 {
-    font-size: 1.24rem;
+    font-size: 1.15rem;
     color: var(--color-primary-2);
 }
 
@@ -76,15 +81,14 @@ a
 
 p 
 {
-    line-height: 1.9;
+    line-height: 1.6;
 
     font-weight: normal;
+    font-weight: 0.8rem;
 }
 
-.testimonial p 
-{
-    font-size: 1.05rem;
-}
+
+
 
 
 .testimonial .position 
@@ -99,7 +103,7 @@ p
 /*layout */
 
 body {
-    font-family: var(--font);
+   
     color: white;
     background: var(--color-primary-1);
 
@@ -317,6 +321,24 @@ nav .logo
 }
 
 
+.call-to-action 
+{
+    background-color: var(--color-primary-2);
+    color: var(--color-secondary-4);
+    padding: 5rem 5rem 7rem;
+
+    background-image: url(../images/bg-pattern-home-6-about-5.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+
+.call-to-action h2 
+{
+    margin-bottom: 0.8em;
+}
+
+
 /*Components */
 
 
@@ -325,6 +347,20 @@ nav .logo
     border: solid 2px white;
     padding: 0.6em 1.8em;
     border-radius: 2rem;
+}
+
+
+.btn-standard 
+{
+    font-size: 1.24rem;
+    font-weight: 600;
+}
+
+.btn-green 
+{
+    border-color: var(--color-secondary-4);
+    background-color: transparent;
+    color: var(--color-secondary-4);
 }
 
 
