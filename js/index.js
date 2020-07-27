@@ -1,4 +1,4 @@
-const navMobile = document.querySelector ('.nav-mobile');
+const navMobile = document.querySelector ('.nav-mobile-overlay');
 const navOpen = document.querySelector ('.nav-open');
 const navClose = document.querySelector ('.nav-mobile .close-btn');
 

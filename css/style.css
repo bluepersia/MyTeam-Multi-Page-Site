@@ -84,14 +84,33 @@ nav .logo
     max-width: 130px;
 }
 
+.nav-mobile-overlay
+{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 250ms, visibility 250ms;
+}
+
+.nav-mobile-overlay.show 
+{
+    visibility: visible;
+    opacity: 1;
+}
 
 .nav-mobile 
 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
+    margin-left: auto;
     width: 68%;
+    height: 100%;
     background: var(--color-secondary-2);
 
     display: flex;
@@ -114,7 +133,7 @@ nav .logo
     transition: transform 250ms, opacity 250ms, visibility 250ms;
 }
 
-.nav-mobile.show 
+.nav-mobile-overlay.show .nav-mobile 
 {
     transform: translateX(0%);
     visibility: visible;
