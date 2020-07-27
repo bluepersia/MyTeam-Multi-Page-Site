@@ -1,0 +1,15 @@
+:root 
+{
+    --color-primary-1: hsl(186, 98%, 17%);
+    --color-primary-2: hsl(0, 87%, 73%);
+    --color-primary-3: hsl(0, 0, 100%);
+
+    --color-secondary-1: hsl(179, 42%, 63%);
+    --color-secondary-2: hsl(187, 41%, 29%);
+    --color-secondary-3: hsl(186, 100%, 14%);
+    --color-secondary-4: hsl(186, 96%, 10%);
+    --color-secondary-5: hsl(186, 100%, 8%);
+
+
+    
+}
