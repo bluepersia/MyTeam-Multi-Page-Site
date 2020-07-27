@@ -11,5 +11,15 @@
     --color-secondary-5: hsl(186, 100%, 8%);
 
 
-    
+    --font: 'Livvic', sans-serif;
 }
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+
