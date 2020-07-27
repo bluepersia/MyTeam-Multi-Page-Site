@@ -81,33 +81,18 @@ p
     font-weight: normal;
 }
 
-.main-block:nth-child(2) h2::before
+.testimonial p 
 {
-    content: '';
-    background-color: var(--color-primary-2);
-    width: 3.8rem;
-    height: 0.28rem;
-    position: absolute;
-    top: 0;
-    
-}
-.main-block:nth-child(2) h2
-{
-    padding-top: 2.4rem;
-    position: relative;
-    text-align: left;
-    width: 220px;
-
-    margin-bottom: 3.5rem;
-
+    font-size: 1.05rem;
 }
 
 
-
-.feature .icon 
+.testimonial .position 
 {
-    margin-bottom: 1.2rem;
+    font-style: italic;
+    font-size: 0.9rem;
 }
+
 
 
 
@@ -119,6 +104,7 @@ body {
     background: var(--color-primary-1);
 
     padding: 2.81rem 0 0;
+    line-height: 1.05;
 }
 
 
@@ -220,7 +206,7 @@ nav .logo
 
 
 
-.main-block:first-child 
+.block-intro 
 {
     padding-bottom: 10rem;
     background-image: url(../images/bg-pattern-home-2.svg);
@@ -229,7 +215,7 @@ nav .logo
 }
 
 
-.main-block:nth-child(2)
+.block-features
 {
     background-color: var(--color-secondary-4);
     background-image: url(../images/bg-pattern-home-3.svg);
@@ -239,14 +225,95 @@ nav .logo
     padding: 4rem 0 4rem;
 }
 
+.block-features h2::before
+{
+    content: '';
+    background-color: var(--color-primary-2);
+    width: 3.8rem;
+    height: 0.28rem;
+    position: absolute;
+    top: 0;
+    
+}
+.block-features h2
+{
+    padding-top: 2.4rem;
+    position: relative;
+    text-align: left;
+    width: 220px;
 
+    margin-bottom: 3.5rem;
+
+}
+
+.feature {
+    margin-bottom: 3rem;
+}
 .feature h3 
 {
     margin-bottom: 0.5em;
 }
 
-.feature {
+
+.feature .icon 
+{
+    margin-bottom: 1.2rem;
+}
+
+.block-testimonials
+{
+    background-image: url(../images/bg-pattern-home-4-about-3.svg), url(../images/bg-pattern-home-5.svg);
+    padding: 9rem 0 8rem;
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    background-color: var(--color-secondary-3);
+}
+
+
+.block-testimonials h2
+{
+    max-width: 325px;
+    margin: 0 auto;
+
     margin-bottom: 3rem;
+}
+.block-testimonials h2 span
+{
+    color: var(--color-secondary-1);
+}
+
+
+.testimonial 
+{
+    background-image: url(../images/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.testimonial .quote
+{
+    margin-bottom: 1.2em;
+}
+
+.testimonial .name
+{
+    color: var(--color-secondary-1);
+}
+
+.testimonial .position
+ {
+     margin-bottom: 1rem;
+ }
+
+
+.testimonial .profile-img 
+{
+    width: 4.5rem;
+    border-radius: 50%;
+    border: solid 2px white;
 }
 
 
