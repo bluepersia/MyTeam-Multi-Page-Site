@@ -27,13 +27,29 @@
 
 
 /*Typography */
+
+body 
+{
+    text-align: center;
+}
+
 h1, h2, h3, body
 {
     font-weight: bold;
 }
 h1 
 {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    max-width: 250px;
+    margin: 0 auto 1.4rem;
+
+    line-height: 1;
+}
+
+
+h1 span 
+{
+    color: var(--color-primary-2);
 }
 
 
@@ -49,7 +65,9 @@ h3
 
 body 
 {
-    font-size: 1.125rem;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.9;
 }
 a
 {
@@ -67,7 +85,13 @@ body {
     color: white;
     background: var(--color-primary-1);
 
-    padding: 2.81rem 6.4% 0;
+    padding: 2.81rem 0 0;
+}
+
+
+header 
+{
+    margin-bottom: 4.5rem;
 }
 
 
@@ -100,7 +124,7 @@ nav .logo
     transition: opacity 250ms, visibility 250ms;
 }
 
-.nav-mobile-overlay.show 
+.nav-mobile-overlay.show-2 
 {
     visibility: visible;
     opacity: 1;
@@ -126,17 +150,22 @@ nav .logo
     background-position-x: 154px;
     background-position-y: bottom;
 
-    transform: translateX(100%);
-    visibility: hidden;
+    
     opacity: 0;
+    transform: translateX(100%);
+    display: none;
 
-    transition: transform 250ms, opacity 250ms, visibility 250ms;
+    transition: transform 250ms, opacity 250ms
 }
 
-.nav-mobile-overlay.show .nav-mobile 
+.nav-mobile-overlay.show-1 .nav-mobile
+{
+    display: flex;
+} 
+
+.nav-mobile-overlay.show-2 .nav-mobile 
 {
     transform: translateX(0%);
-    visibility: visible;
     opacity: 1;
 }
 
@@ -158,6 +187,16 @@ nav .logo
 
 
 
+.main-block:first-child 
+{
+    padding-bottom: 10rem;
+    background-image: url(../images/bg-pattern-home-2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+
 
 /*Components */
 
@@ -167,4 +206,12 @@ nav .logo
     border: solid 2px white;
     padding: 0.6em 1.8em;
     border-radius: 2rem;
+}
+
+
+.container 
+{
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
 }
