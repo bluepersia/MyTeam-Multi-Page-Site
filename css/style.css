@@ -61,7 +61,8 @@ h2 {
 
 h3 
 {
-    font-size: 1.125rem;
+    font-size: 1.24rem;
+    color: var(--color-primary-2);
 }
 
 
@@ -97,7 +98,17 @@ p
     text-align: left;
     width: 220px;
 
+    margin-bottom: 3.5rem;
+
 }
+
+
+
+.feature .icon 
+{
+    margin-bottom: 1.2rem;
+}
+
 
 
 /*layout */
@@ -225,10 +236,18 @@ nav .logo
     background-repeat: no-repeat;
     background-position-x: 275px;
 
-    padding: 4rem 0 0;
+    padding: 4rem 0 4rem;
 }
 
 
+.feature h3 
+{
+    margin-bottom: 0.5em;
+}
+
+.feature {
+    margin-bottom: 3rem;
+}
 
 
 /*Components */
