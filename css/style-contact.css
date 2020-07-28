@@ -103,3 +103,35 @@ h3
     font-size: 1.1rem;
     color: var(--color-primary-1);
 }
+
+
+
+@media (min-width: 768px)
+{
+    .block-intro 
+    {
+        background-image: url(../images/bg-pattern-about-2-contact-1.svg), url(../images/bg-pattern-contact-2.svg);
+
+        background-position: left -100px top, right -100px bottom;
+    }
+}
+
+
+@media (min-width: 1025px)
+{
+
+    .block-intro h1 
+    {
+        font-size: 4rem;
+        margin-bottom: 0.6em;
+    }
+
+    .block-intro h2 
+    {
+        font-size: 1.9rem;
+    }
+    .contact-form 
+    {
+        width: 50%;
+    }
+}
