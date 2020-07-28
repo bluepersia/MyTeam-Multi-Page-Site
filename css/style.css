@@ -496,6 +496,11 @@ footer .contact
         display: initial
     }
 
+    header 
+    {
+        padding-bottom: 3rem;
+    }
+
 
     nav a 
     {
@@ -510,19 +515,14 @@ footer .contact
         align-items: center;
     }
 
-    .block-intro 
-    {
-        background-image: url(../images/bg-pattern-home-1.svg);
-        background-repeat: no-repeat;
-        background-position: -100px 55px;
-    }
+    
    
 
     .block-intro .container 
     {
         max-width: 460px;
         margin: 0 auto;
-        padding: 3rem 0 15rem;
+        padding-bottom: 15rem;
     }
 
     h1 
@@ -695,6 +695,9 @@ footer .contact
     {
        
        text-align: left;
+       background-image: url(../images/bg-pattern-home-1.svg);
+        background-repeat: no-repeat;
+        background-position-x: -100px;
     }
 
     .block-intro .container
