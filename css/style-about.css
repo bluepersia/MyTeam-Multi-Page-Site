@@ -133,9 +133,14 @@
     left: 50%;
     transform: translateX(-50%);
 
-    transition: background-color 250ms, transform 250ms;
+    transition: background-color 250ms, transform 250ms, filter 250ms;
 
     transform-origin: 50% 50%;
+}
+
+.director-btn:hover 
+{
+    filter: brightness(150%);
 }
 
 .director[data-active-index="1"] .director-btn
