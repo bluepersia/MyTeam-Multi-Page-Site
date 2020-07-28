@@ -35,8 +35,9 @@
 {
     background-color: var(--color-secondary-3);
     padding-top: 6rem;
-    background-image: url(../images/bg-pattern-about-2-contact-1.svg);
-    background-position: left -100px top -100px;
+    padding-bottom: 4.2rem;
+    background-image: url(../images/bg-pattern-about-2-contact-1.svg), url(../images/bg-pattern-home-4-about-3.svg);
+    background-position: left -100px top -100px, right bottom;
     background-repeat: no-repeat;
 }
 
@@ -134,5 +135,31 @@
 .director .main, .director .secondary
 {
     transition: opacity 250ms;
+}
+
+
+
+.block-clients 
+{
+    background-color: var(--color-secondary-4);
+    padding: 5.5em 0 1.5rem;
+
+    background-image: url(../images/bg-pattern-about-4.svg);
+    background-repeat: no-repeat;
+    background-position: -100px -100px;
+}
+
+
+.block-clients h2 
+{
+    margin-bottom: 4rem;
+}
+
+.block-clients img 
+{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+    max-width: 150px;
 }
 
