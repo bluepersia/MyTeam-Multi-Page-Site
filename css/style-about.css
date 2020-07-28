@@ -186,6 +186,18 @@
     }
 
 
+    .block-directors 
+    {
+        background-position: left -100px top, right bottom;
+    }
+
+
+    .block-clients 
+    {
+        background-position: left top -100px;
+    }
+
+
     .clients 
     {
         display: flex;
@@ -197,4 +209,51 @@
         max-width: 106px;
     }
     
+}
+
+
+@media (min-width: 1025px)
+{
+
+   .block-intro .container 
+   {
+       align-items: center;
+   }
+    
+    .block-intro h1 
+    {
+        font-size: 4rem;
+    }
+
+
+    .block-intro p
+    {
+        max-width: 680px;
+        font-size: 1.15rem;
+        position: relative;
+        padding-top: 2.5rem;
+    }
+
+    .block-intro p::before 
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3rem;
+        height: 0.2rem;
+        background-color: var(--color-primary-2);
+    }
+
+
+    .block-clients 
+    {
+        background-position: left top;
+    }
+
+
+    .clients img 
+    {
+        max-width: 170px;
+    }
 }
