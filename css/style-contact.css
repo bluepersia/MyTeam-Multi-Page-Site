@@ -1,0 +1,105 @@
+
+:root 
+{
+    --color-primary-1: hsl(186, 98%, 17%);
+    --color-primary-2: hsl(0, 87%, 73%);
+    --color-primary-3: hsl(0, 0, 100%);
+
+    --color-secondary-1: hsl(179, 42%, 63%);
+    --color-secondary-2: hsl(187, 41%, 29%);
+    --color-secondary-3: hsl(186, 100%, 14%);
+    --color-secondary-4: hsl(186, 96%, 10%);
+    --color-secondary-5: hsl(186, 100%, 8%);
+
+    --color-white-transparent: rgba(255, 255, 255, 0.6);
+    --color-white-transparent-2: rgba(255, 255, 255, 0.85);
+
+    --font: 'Livvic', sans-serif;
+}
+
+
+
+
+
+.block-intro 
+{
+    background-image: url(../images/bg-pattern-contact-2.svg);
+    background-repeat: no-repeat;
+    background-position: right -100px bottom -100px;
+}
+
+.block-intro .container 
+{
+    background-image: none;
+    padding-bottom: 7rem;
+}
+
+
+h2 
+{
+    color: var(--color-primary-2);
+    margin-bottom: 2.4rem;
+}
+
+
+h3 
+{
+    color: white;
+}
+
+
+.ask-about 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.ask-about .point 
+{
+    display: flex;
+    align-items: center;
+}
+
+.ask-about .point img 
+{
+    margin-right: 1.4rem;
+}
+
+
+
+.primary 
+{
+    margin-bottom: 2rem;
+}
+
+
+.contact-form 
+{
+    display: flex;
+    flex-direction: column;;
+}
+
+.contact-form input, .contact-form textarea, .contact-form ::placeholder
+{
+    color: var(--color-white-transparent);
+    font-size: 0.95rem;
+}
+
+.contact-form input, .contact-form textarea
+{
+    background: 0;
+    border: 0;
+    border-bottom: solid 1px white;
+    padding: 1.4em 0.8em;
+}
+
+
+.contact-form button[type="submit"]
+{
+    margin-top: 1.5rem;
+    align-self: flex-start;
+    font-size: 1.1rem;
+    color: var(--color-primary-1);
+}
