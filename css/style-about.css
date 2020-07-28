@@ -1,0 +1,138 @@
+
+:root 
+{
+    --color-primary-1: hsl(186, 98%, 17%);
+    --color-primary-2: hsl(0, 87%, 73%);
+    --color-primary-3: hsl(0, 0, 100%);
+
+    --color-secondary-1: hsl(179, 42%, 63%);
+    --color-secondary-2: hsl(187, 41%, 29%);
+    --color-secondary-3: hsl(186, 100%, 14%);
+    --color-secondary-4: hsl(186, 96%, 10%);
+    --color-secondary-5: hsl(186, 100%, 8%);
+
+    --color-white-transparent: rgba(255, 255, 255, 0.6);
+    --color-white-transparent-2: rgba(255, 255, 255, 0.85);
+
+    --font: 'Livvic', sans-serif;
+}
+
+.block-intro .container
+{
+    background-image: none;
+    padding-bottom: 7rem;
+}
+
+.block-intro 
+{
+    background-image: url(../images/bg-pattern-about-1-mobile-nav-1.svg);
+    background-repeat: no-repeat;
+    background-position: right -100px bottom -100px;
+}
+
+
+.block-directors 
+{
+    background-color: var(--color-secondary-3);
+    padding-top: 6rem;
+    background-image: url(../images/bg-pattern-about-2-contact-1.svg);
+    background-position: left -100px top -100px;
+    background-repeat: no-repeat;
+}
+
+.block-directors h2 
+{
+    margin-bottom: 1.3em;
+}
+
+
+.director-img 
+{
+    width: 6rem;
+    border-radius:50%;
+    border: solid 2px white;
+    margin-bottom: 1rem;
+}
+
+.director 
+{
+    background-color: var(--color-secondary-4);
+    padding: 2.2rem 0 3rem;
+    margin-bottom: 3rem;
+
+    position: relative;
+
+    height: 252px;
+}
+
+.director h3 
+{
+    color: var(--color-secondary-1);
+    margin-bottom: 1em;
+}
+
+
+.director .position 
+{
+    font-style: italic;
+}
+
+.director .secondary 
+{
+    display: none;
+}
+
+.director .quote 
+{
+    max-width: 230px;
+    margin: 0 auto 1.3rem;
+}
+
+.director-social-media svg
+{
+    margin-right: 0.5rem;
+}
+
+.director-social-media svg:last-child 
+{
+    margin-right: 0;
+}
+
+.director-social-media svg:hover path 
+{
+    fill: var(--color-primary-2);
+}
+
+.director-btn 
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--color-primary-2);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: -22px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: background-color 250ms, transform 250ms;
+
+    transform-origin: 50% 50%;
+}
+
+.director[data-active-index="1"] .director-btn
+{
+    background-color: var(--color-secondary-1);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.director .main, .director .secondary
+{
+    transition: opacity 250ms;
+}
+
