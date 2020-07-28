@@ -39,6 +39,17 @@
     background-image: url(../images/bg-pattern-about-2-contact-1.svg), url(../images/bg-pattern-home-4-about-3.svg);
     background-position: left -100px top -100px, right bottom;
     background-repeat: no-repeat;
+
+}
+
+
+.directors 
+{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 326px));
+    justify-content: center;
+    column-gap: 0.6rem;
 }
 
 .block-directors h2 
@@ -63,6 +74,7 @@
 
     position: relative;
 
+    min-width: 280px;
     height: 252px;
 }
 
@@ -163,3 +175,26 @@
     max-width: 150px;
 }
 
+
+
+
+@media (min-width: 768px)
+{
+    .block-intro
+    {
+        background-position: right -100px bottom;
+    }
+
+
+    .clients 
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .clients img 
+    {
+        max-width: 106px;
+    }
+    
+}
